@@ -34,7 +34,7 @@ Download and install from [arduino.cc](https://www.arduino.cc/en/software)
 5. Search for "esp32" and install "esp32 by Espressif Systems"
 
 ### 3. Configure Board Settings
-1. Go to **Tools → Board → ESP32 Arduino → ESP32 Dev Module**
+1. Go to **Tools → Board → ESP32 Arduino → DOIT ESP32 DEVKIT V1**
 2. Configure the following settings:
    - **Upload Speed:** 921600 (or 115200 if issues occur)
    - **Flash Frequency:** 80MHz
@@ -48,7 +48,7 @@ Download and install from [arduino.cc](https://www.arduino.cc/en/software)
 
 ### Upload the Code
 1. Open `ESP32Clicker.ino` in Arduino IDE
-2. Select **Tools → Board → ESP32 Arduino → ESP32 Dev Module**
+2. Select **Tools → Board → ESP32 Arduino → DOIT ESP32 DEVKIT V1**
 3. Select the correct COM port: **Tools → Port**
 4. Click **Upload**
 
@@ -135,7 +135,7 @@ const int LED_RED_PIN = 4;    // GPIO for red/stopped indicator
 
 **Compilation errors:**
 - Ensure ESP32 board support is properly installed (v3.3.5 tested)
-- Check that you've selected "ESP32 Dev Module" (not Arduino Uno, etc.)
+- Check that you've selected "DOIT ESP32 DEVKIT V1" (not Arduino Uno or ESP32 Dev Module)
 - Verify all required BLE libraries are included with the ESP32 package
 
 **Device connects but keys not being sent:**
