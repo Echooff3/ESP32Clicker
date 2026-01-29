@@ -11,7 +11,7 @@ const int LED_GREEN_PIN = 2;
 const int LED_RED_PIN = 4;
 
 unsigned long lastPressTime = 0;
-const unsigned long pressInterval = 500;
+const unsigned long pressInterval = 1000;
 
 bool isRunning = false;
 bool lastButtonState = HIGH;
@@ -98,7 +98,7 @@ void sendSpaceKey() {
 
   input->setValue((uint8_t*)&report, sizeof(report));
   input->notify();
-  delay(10);
+  delay(250);
 
   input->setValue((uint8_t*)&NO_KEY_PRESSED, sizeof(NO_KEY_PRESSED));
   input->notify();
